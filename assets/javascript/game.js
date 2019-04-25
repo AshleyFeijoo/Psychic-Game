@@ -69,6 +69,7 @@ if (!alphabet.includes(playerGuess)){
         guessedLetters.textContent = guessedLetter;
         randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
         console.log(randomLetter);
+        return;
     } 
     else {
     if (newGuess.includes(playerGuess)){} //if the player guess is equal to a different guess, do nothing
