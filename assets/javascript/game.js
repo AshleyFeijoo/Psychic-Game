@@ -68,9 +68,9 @@ document.onkeypress = function(event){
     } 
     else {
 
-    if (newGuess.includes(playerGuess)){}
+    if (newGuess.includes(playerGuess)){} //if the player guess is equal to a different guess, do nothing
     else {
-    guessesLeft = guessesLeft - 1;
+    guessesLeft = guessesLeft - 1; //if player guess is not equal to a letter, remove a guess left
     newGuess.push(playerGuess);
     guessesLeftHtml.innerHTML = guessesLeft;
     guessedLetters.innerHTML = newGuess.join(' ');

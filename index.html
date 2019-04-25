@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Psychic Game!</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
- 
+    <title>Psychic Game!</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Righteous" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
 <body>
     <div class="container">
         <div class="row">
-                <h1 class="header col-md-12">The Psychic Game</h1>
+                <h1 class="header h1 col-md-12 text-center">
+                    <a href="https://fontmeme.com/halloween-fonts/"><img src="https://fontmeme.com/permalink/190425/e9e1d84c9c85e0d153afcea6cca8cba8.png" alt="halloween-fonts" border="0"></a>
+
+                </h1>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12 text-left p-4">
                 <h4>Guess what letter I'm thinking of....</h4>
                 <h6>Wins: </h6>
                 <p id="total-wins">
@@ -36,14 +43,18 @@
 
                 <br>
 
-                <input type="button" value="Reload Page" onClick="document.location.reload(true)">
+                <input type="button" value="Restart" onClick="document.location.reload(true)">
 
             </div>
         </div>
 
 
     </div>
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    <script src="./assets/javascript/game.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
