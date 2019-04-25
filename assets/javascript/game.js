@@ -48,8 +48,7 @@ console.log(randomLetter);
 
 
 guessesLeftHtml.innerHTML = guessesLeft;
-var alphabetNot = "[^a-z0-9]";
-console.log(alphabetNot)
+
 
 document.onkeypress = function(event){
     
