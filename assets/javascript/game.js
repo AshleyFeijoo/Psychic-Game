@@ -32,7 +32,7 @@ var totalWins = 0;
 var totalLosses = 0;
 var guessesLeft = [10];
 var guessedLetter = [];
-var newGuess = [];
+var guessedLetterArray = [];
 
 var winsHtml = document.getElementById("total-wins");
 var lossesHtml = document.getElementById("total-losses");
@@ -64,7 +64,8 @@ if (!alphabet.includes(playerGuess)){
 
     if (playerGuess === randomLetter){
         totalWins ++; //increase wins +1
-        newGuess = []; //create new empty array for letters
+        guessedLetterArray
+     = []; //create new empty array for letters
         lossesHtml.innerHTML = totalLosses;
         winsHtml.innerHTML = totalWins; //puts the total wins at 1
         guessesLeft = [10]; //resets the guesses left to 
@@ -75,18 +76,23 @@ if (!alphabet.includes(playerGuess)){
         return;
     } 
     else {
-    if (newGuess.includes(playerGuess)){} //if the player guess is equal to a different guess, do nothing
+    if (guessedLetterArray
+    .includes(playerGuess)){} //if the player guess is equal to a different guess, do nothing
     else {
     guessesLeft = guessesLeft - 1; //if player guess is not equal to a letter, remove a guess left
-    newGuess.push(playerGuess);
+    guessedLetterArray
+.push(playerGuess);
     guessesLeftHtml.innerHTML = guessesLeft;
-    guessedLetters.innerHTML = newGuess.join(' ');
-    // console.log(newGuess);
+    guessedLetters.innerHTML = guessedLetterArray
+.join(' ');
+    // console.log(guessedLetterArray
+;
         }  
     }if (guessesLeft == 0){
         totalLosses ++;
         lossesHtml.innerHTML = totalLosses;
-        newGuess = []; //create new empty array for letters
+        guessedLetterArray
+     = []; //create new empty array for letters
         winsHtml.innerHTML = totalWins; //puts the total wins at 1
         guessesLeft = [10]; //resets the guesses left to 
         guessesLeftHtml.innerHTML = guessesLeft;
